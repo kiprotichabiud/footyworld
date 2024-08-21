@@ -20,7 +20,7 @@ const Navbar = () => {
             <img className="h-10 w-10 mr-2" src={logo} alt="FootyLive" />
             <span className="text-xl tracking-tight">FootballWorld</span>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12">
+          <ul className="hidden lg:flex ml-14 space-x-12 font-bold">
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link to={item.href}>{item.label}</Link>
