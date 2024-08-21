@@ -1,30 +1,25 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Services from './components/Services'
-import Doctors from './components/Doctors'
-import Blogs from './components/Blogs'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import FeatureSection from './components/FeatureSection';
+import SignIn from './components/Navbar';
+import SignUp from './components/Navbar';
 
-
-function App() {
-
+const App = () => {
   return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/home" element={<HeroSection />} />
+        <Route path="/matches" element={<FeatureSection />} />
+        <Route path="/teams" element={<FeatureSection />} />
+        <Route path="/news" element={<FeatureSection />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </Router>
+  );
+};
 
-    <>
-     <Navbar></Navbar>
-     <main>
-      <div id='home'><Home></Home></div>
-      <div id='about'><About></About></div>
-      <div id='services'><Services></Services></div>
-      <div id='doctors'><Doctors></Doctors></div>
-      <div id='blogs'><Blogs></Blogs></div>
-     </main>
-     <Footer></Footer>
-    </>
-
-  )
-}
-
-export default App
+export default App;
