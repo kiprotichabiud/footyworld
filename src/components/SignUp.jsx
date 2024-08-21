@@ -56,7 +56,7 @@ function SignUp() {
           </button>
         </form>
         <p className="text-center mt-4 text-white">
-          Already have an account? <button onClick={() => navigate('/login')} className=" text-green-500 ">Sign In</button>
+          Already have an account? <button onClick={() => navigate('/signin')} className=" text-green-500 ">Sign In</button>
         </p>
       </div>
     </div>

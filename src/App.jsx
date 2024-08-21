@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import FeatureSection from './components/FeatureSection';
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
+import Updates from './components/Updates';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/news" element={<FeatureSection />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/updates" element={<Updates/>} />
       </Routes>
     </Router>
   );

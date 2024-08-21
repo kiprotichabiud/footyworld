@@ -18,14 +18,12 @@ const HeroSection = () => {
       </p>
       <div className="flex justify-center my-10">
         <Link
-          to="/watch"
+          to="/updates"
           className="bg-gradient-to-r from-green-500 to-green-800 py-3 px-4 mx-3 rounded-md"
         >
-          Watch Now
-        </Link>
-        <Link to="/learn-more" className="py-3 px-4 mx-3 rounded-md border">
           Learn More
         </Link>
+        
       </div>
       <div className="flex mt-10 justify-center">
         <video
