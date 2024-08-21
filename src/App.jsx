@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import FeatureSection from './components/FeatureSection';
-import SignIn from './components/Navbar';
-import SignUp from './components/Navbar';
+import SignUp from './components/SignUp';
+import SignIn from './components/SignIn';
 
 const App = () => {
   return (
