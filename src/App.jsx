@@ -5,11 +5,13 @@ import FeatureSection from './components/FeatureSection';
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import Updates from './components/Updates';
+import About from './components/About';
 
 const App = () => {
   return (
     <Router>
       <Navbar />
+     
       <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/home" element={<HeroSection />} />
@@ -19,7 +21,10 @@ const App = () => {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/updates" element={<Updates/>} />
+       
+      
       </Routes>
+      <About/>
     </Router>
   );
 };
