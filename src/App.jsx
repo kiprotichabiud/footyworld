@@ -7,6 +7,9 @@ import SignIn from './components/SignIn';
 import Updates from './components/Updates';
 import About from './components/About';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
+
+
 
 
 const App = () => {
@@ -29,6 +32,7 @@ const App = () => {
       </Routes>
       <About/>
       <Footer/>
+      <Contact/>
     </Router>
   );
 };

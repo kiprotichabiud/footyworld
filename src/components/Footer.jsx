@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center md:justify-center p-4 ">
+    <div className=" justify-evenly flex flex-col md:flex-row items-center md:justify-center p-4 ">
       <div className="mb-4 md:mb-0 md:flex-1 md:mr-4">
         <img
           className="w-full h-[400px] object-cover rounded-lg"
-          src="https://plus.unsplash.com/premium_photo-1661763911173-f2f7becc70b0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww"
+          src="https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29kZXxlbnwwfHwwfHx8MA%3D%3D"
           alt="Contact"
         />
       </div>
