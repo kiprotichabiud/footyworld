@@ -6,6 +6,8 @@ import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import Updates from './components/Updates';
 import About from './components/About';
+import Footer from './components/Footer';
+
 
 const App = () => {
   return (
@@ -22,9 +24,11 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/updates" element={<Updates/>} />
        
+       
       
       </Routes>
       <About/>
+      <Footer/>
     </Router>
   );
 };

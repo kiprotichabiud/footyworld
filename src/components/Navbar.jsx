@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
             <Link
               to="/signup"
-              className="bg-gradient-to-r from-green-500 to-green-800 py-2 px-3 rounded-md"
+              className="bg-gradient-to-r from-green-500 to-green-800 py-2 px-3 rounded-lg"
             >
               Create an account
             </Link>

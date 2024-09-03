@@ -72,7 +72,7 @@ const LearnMore = () => {
           to="/signup"
           className="bg-gradient-to-r from-green-500 to-green-800 py-3 px-4 mx-3 rounded-md text-white"
         >
-          Join FootyLive Now
+          Join FootballWorld Now
         </Link>
       </div>
     </div>
