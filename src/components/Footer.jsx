@@ -31,10 +31,9 @@ const Footer = () => {
           </div>
           <div className="mb-4">
             <label className="block text-lg mb-1" htmlFor="message">Message:</label>
-            <input
+            <textarea
               id="message"
-              type="message"
-              className="w-full p-2 border border-gray-300 rounded-lg"
+              className="w-full p-2 border border-gray-300 rounded-lg h-32 resize-none"
               placeholder="Your message"
             />
           </div>
