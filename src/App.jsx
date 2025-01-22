@@ -9,14 +9,10 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 
-
-
-
 const App = () => {
   return (
     <Router>
       <Navbar />
-     
       <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/home" element={<HeroSection />} />
@@ -25,14 +21,11 @@ const App = () => {
         <Route path="/news" element={<FeatureSection />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/updates" element={<Updates/>} />
-       
-       
-      
+        <Route path="/updates" element={<Updates />} />
       </Routes>
-      <About/>
-      <Footer/>
-      <Contact/>
+      <About />
+      <Contact />
+      <Footer />
     </Router>
   );
 };
