@@ -6,28 +6,95 @@ import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import Updates from './components/Updates';
 import About from './components/About';
-import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+// Layout component that includes Navbar and Footer
+const Layout = ({ children }) => {
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
+  );
+};
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<HeroSection />} />
-        <Route path="/home" element={<HeroSection />} />
-        <Route path="/matches" element={<FeatureSection />} />
-        <Route path="/teams" element={<FeatureSection />} />
-        <Route path="/news" element={<FeatureSection />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/updates" element={<Updates />} />
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <HeroSection />
+              <About />
+              <Contact />
+            </Layout>
+          }
+        />
+        <Route
+          path="/home"
+          element={
+            <Layout>
+              <HeroSection />
+              <About />
+              <Contact />
+            </Layout>
+          }
+        />
+        <Route
+          path="/matches"
+          element={
+            <Layout>
+              <FeatureSection />
+            </Layout>
+          }
+        />
+        <Route
+          path="/teams"
+          element={
+            <Layout>
+              <FeatureSection />
+            </Layout>
+          }
+        />
+        <Route
+          path="/news"
+          element={
+            <Layout>
+              <FeatureSection />
+            </Layout>
+          }
+        />
+        <Route
+          path="/signin"
+          element={
+            <Layout>
+              <SignIn />
+            </Layout>
+          }
+        />
+        <Route
+          path="/signup"
+          element={
+            <Layout>
+              <SignUp />
+            </Layout>
+          }
+        />
+        <Route
+          path="/updates"
+          element={
+            <Layout>
+              <Updates />
+            </Layout>
+          }
+        />
       </Routes>
-      <About />
-      <Contact />
-      <Footer />
     </Router>
   );
 };
 
-export default App;
+export default App;  
