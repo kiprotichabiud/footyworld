@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="flex justify-center my-10">
         <Link
           to="/updates"
-          className="bg-gradient-to-r from-green-400 to-green-900 py-3 px-4 mx-3 rounded-lg text-lg "
+          className="bg-gradient-to-r from-green-400 to-green-900 py-3 px-4 mx-3  text-lg "
         >
           Learn More
         </Link>
